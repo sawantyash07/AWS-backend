@@ -9,8 +9,7 @@ router.post(
   [
     check("username", "Username is required").not().isEmpty(),
     check("email", "Please include a valid email").isEmail(),
-    check("password", "Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.")
-      .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/),
+    check("password", "Password is required").not().isEmpty(),
   ],
   authController.signup
 );
