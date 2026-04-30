@@ -43,7 +43,7 @@ This is the core API for the Custom Version Control System (VCS). It handles rep
     ```bash
     npm start
     ```
-    The API will be available at `http://localhost:5000`.
+    The API will be available at `http://3.109.60.242:5000`.
 
 ## 📌 API Endpoints
 
